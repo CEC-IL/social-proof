@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  margin-top: 5.25rem;
+  padding: 0 1rem;
+}
+
+:root {
+  /*Primary*/
+  --vrydkmagneta: hsl(300, 43%, 22%);
+  --softpink: hsl(333, 80%, 67%);
+  /* Neutral */
+  --dkgraymagneta: hsl(303, 10%, 53%);
+  --lightgraymagneta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.user_content {
+  text-align: center;
+}
+
+.user_heading {
+  padding-bottom: 30px;
+}
+
+.user_heading h2 {
+  font-size: 700;
+  color: var(--vrydkmagneta);
+  padding-bottom: 15px;
+}
+
+.user_heading p {
+  color: var(--dkgraymagneta);
+  line-height: 1.8;
+}
+
+.user_ratings .rating {
+  background-color: var(--lightgraymagneta);
+  padding: .7rem .7rem;
+  margin-bottom: .7rem;
+  border-radius: 10px;
+}
+
+.user_ratings .rating p {
+  padding-top: .7rem;
+  color: var(--vrydkmagneta);
+  font-weight: bold;
+}
+
+.users {
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.users .user {
+  background-color: var(--vrydkmagneta);
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 10px;
+}
+
+.users .user p {
+  padding-top: 10px;
+  color: var(--lightgraymagneta);
+  line-height: 2;
+}
+
+.user .user_name {
+  display: flex;
+}
+
+.user .user_name p {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.user .user_name p span {
+  color: var(--softpink);
+  font-weight:
+}
+
+.user .user_name .img_user {
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+.user .user_name .img_user img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:700px) {
+  .user_content, .users {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .user_content {
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .user_heading {
+    width: 44%;
+    text-align: left;
+  }
+
+  .flex {
+    padding: 0 1rem;
+    display: flex;
+  }
+
+  .rating {
+    display: flex;
+    /* margin-right: 50px; */
+    padding: 1.5rem 2rem;
+  }
+
+  .rating img {
+    margin-top: 9px;
+    width: 17px;
+    height: 18px;
+    margin-right: .7rem;
+  }
+
+  .rating p {
+    margin-left: 1.5rem;
+  }
+
+  .rate2 {
+    transform: translateX(-20px);
+  }
+
+  .rate1 {
+    transform: translateX(-40px);
+  }
+
+  .users {
+    display: flex;
+  }
+
+  .user {
+    margin-right: .5rem;
+  }
+
+  .user2 {
+    transform: translatey(20px);
+  }
+
+  .user3 {
+    transform: translatey(40px);
+  }
+}
